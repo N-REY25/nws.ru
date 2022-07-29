@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NIGHT WEB-STUDIO - Веб студия</title>
+        <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
+        <!-- <script>
+            let detect = new MobileDetect(window.navigator.userAgent);
+            if (detect.mobile() != null) {
+                $(location).attr('href', 'http://m.nws.ru/');
+            }
+        </script> -->
+    </head>
+    <body>
+        <section class="loading_section">
+            <div class="loading">
+                <img class="load_img" src="../img/logo_1.svg">
+            </div>
+        </section>
+        <header>
+            <div class="wrapper">
+                <div class="header">
+                    <img class="h_logo" src="../img/logo_1.svg" alt="Лого 1">
+                    <nav class="h_nav">
+                        <a href="#">Главная</a>
+                        <a href="#">Прайс-лист</a>
+                        <a href="#">Наши работы</a>
+                        <a href="#">О нас</a>
+                        </ul>
+                    </nav>
+                    <a class="h_price_site" href="#">Заказать сайт</a>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="wrapper">
+                <div class="welcome_screen">
+                    <div class="ws_text">
+                        <h1>Современные и красивые сайты</h1>
+                        <p>Мы создаем сайты, которые позволят вам дистанци́роваться от конкурентов и решать</br>задачи бизнеса на новом уровне!</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <img class="ws_img" src="../img/undraw_proud_coder_re_exuy.svg" alt="Программист">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="screen_works">
+                    <h2>Прайс-лист</h2>
+                    <div class="hr"></div>
+                    <div class="sw_items">
+                        <div class="sw_item">
+                            <img src="../img/undraw_social_bio_re_0t9u.svg" alt="Визитка">
+                            <div class="swi_info">
+                                <h3>Визитка</h3>
+                                <p class="swi_text">Небольшая страница представления вас или вашего бизнеса.</p>
+                                <p class="swi_price">от 3000 ₽</p>
+                            </div>
+                        </div>
+                        <div class="sw_item">
+                            <img src="../img/undraw_businesswoman_re_5n6b.svg" alt="Портфолио">
+                            <div class="swi_info">
+                                <h3>Портфолио</h3>
+                                <p class="swi_text">Небольшая презентация отдельного человека или коллектива, в которой указаны умения и навыки в определенной области.</p>
+                                <p class="swi_price">от 6500 ₽</p>
+                            </div>
+                        </div>
+                        <div class="sw_item">
+                            <img src="../img/undraw_blog_post_re_fy5x.svg" alt="Блог">
+                            <div class="swi_info">
+                                <h3>Блог</h3>
+                                <p class="swi_text">Веб-сайт, основное содержимое которого — регулярно добавляемые человеком записи, содержащие текст, изображения или мультимедиа.</p>
+                                <p class="swi_price">от 10000 ₽</p>
+                            </div>
+                        </div>
+                        <div class="sw_item">
+                            <img src="../img/undraw_add_to_cart_re_wrdo.svg" alt="Интернет-магазин">
+                            <div class="swi_info">
+                                <h3>Интернет-магазин</h3>
+                                <p class="swi_text">Позволяет пользователям онлайн сформировать заказ на покупку, выбрать способ оплаты и доставки заказа, оплатить заказ.</p>
+                                <p class="swi_price">от 45000 ₽</p>
+                            </div>
+                        </div>
+                        <div class="sw_item">
+                            <img src="../img/undraw_product_tour_re_8bai.svg" alt="Корпоративный сайт">
+                            <div class="swi_info">
+                                <h3>Корпоративный сайт (портал)</h3>
+                                <p class="swi_text">Веб-интерфейс, предоставляющий сотрудникам доступ к корпоративным данным фирмы или по работе с клиентами.</p>
+                                <p class="swi_price">от 90000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper">
+                <div class="footer_text">
+                    <img src="../img/logo_2.svg" alt="Лого 2">
+                    <p>© “NWS” -  NIGHT WEB-STUDIO, 2021-2022</p>
+                    <p>© Герасимов Андрей Сергеевич</p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            document.body.onload = function() {
+                setTimeout(function() {
+                    $('.loading_section').fadeOut(1000);
+                }, 1000);
+            }
+        </script>
+    </body>
+</html>
